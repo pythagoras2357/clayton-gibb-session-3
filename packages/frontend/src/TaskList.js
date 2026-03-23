@@ -203,6 +203,22 @@ function TaskList({ onEdit }) {
                 gap: 1
               }}
             >
+              <Chip
+                label={task.priority || 'P3'}
+                size="small"
+                className={`priority-badge priority-${(task.priority || 'P3').toLowerCase()}`}
+                sx={{
+                  height: 20,
+                  fontSize: '0.7rem',
+                  fontWeight: 700,
+                  letterSpacing: '0.5px',
+                  color: 'white',
+                  backgroundColor:
+                    (task.priority || 'P3') === 'P1' ? '#d32f2f' :
+                    (task.priority || 'P3') === 'P2' ? '#f57c00' :
+                    '#757575',
+                }}
+              />
               {task.due_date && (
                 <Chip
                   icon={<EventIcon sx={{ fontSize: 14 }} />}
