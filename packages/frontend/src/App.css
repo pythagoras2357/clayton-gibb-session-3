@@ -122,3 +122,19 @@ li:last-child {
   background-color: #757575 !important;
   color: white !important;
 }
+
+/* Priority selector: selected state */
+.priority-option-selected {
+  color: #07F2E6;
+  border-color: #07F2E6;
+  background-color: rgba(7, 242, 230, 0.12);
+  font-weight: 700;
+}
+
+/* Priority selector: unselected state */
+.priority-option-unselected {
+  color: #7A7A7A;
+  border-color: #7A7A7A;
+  background-color: transparent;
+  font-weight: 400;
+}
